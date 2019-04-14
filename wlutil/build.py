@@ -209,7 +209,7 @@ def makeBin(config, initramfs=False):
             shutil.rmtree('riscv-pk/build')
         os.mkdir('riscv-pk/build')
 
-        run(['../configure', '--host=riscv64-unknown-elf',
+        run(['../configure', '--host=riscv64-unknown-elf', '--enable-sm',
             '--with-payload=' + os.path.join(config['linux-src'], 'vmlinux')], cwd='riscv-pk/build')
         run(['make', jlevel], cwd='riscv-pk/build')
 
