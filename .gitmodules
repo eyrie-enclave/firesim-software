@@ -7,3 +7,6 @@
 [submodule "br/buildroot"]
 	path = wlutil/br/buildroot
 	url = https://github.com/sifive/buildroot.git
+[submodule "linux-keystone-driver"]
+	path = linux-keystone-driver
+	url = https://github.com/keystone-enclave/linux-keystone-driver
